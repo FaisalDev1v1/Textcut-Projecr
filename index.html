@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPDFTBBK26"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPDFTBBK26');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                                                                             
+
+        <!-- css file -->
+    <link rel="stylesheet" href="css/style.css" >
+        <!-- normlize file  -->
+    <link rel="stylesheet" href="..\css\normliz.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>Text Cut</title>
+<style>
+
+    body {
+        font-family: "Work Sans", sans-serif;
+        background-color: #eee;
+      }
+      
+</style>
+</head>
+<body class="">
+<!-- Label for web site   عنوان الموقع  -->
+    <header  class="text-bg-info p-3 card-text w-100">
+       <h4>
+        <strong>   Text splitter  </strong>
+       </h4> 
+        <p class="text-bg-info p-3">  
+             <strong>
+                <em>Text splitter in Twitter  tweets threads   </em>     
+                <br>
+                <em>  مقسم النصوص لسلاسل التغريدات في تويتر  </em>   
+             </strong>
+        </p>
+
+    <!-- button  --> 
+    <button Type="button" id="mybtn"  class="btn bg-primary text-white btn-md   " style="border: 1px solid black">  تنسيق   </button>
+        <br>
+    </header>
+
+    <div class="bg-gray" style="text-align:center ;">
+        <div class=" grid text-center container">
+            <!-- Label for input text   حقل إدخال النص  -->
+            <input    type="text"  id="area"   class="center  wid-100 border border-dark"  placeholder="أدخل النص المراد تجزئته"  >
+        
+        <br> 
+        
+<!-- text description -->
+<div class="container" >
+<p>
+
+    <span> &#11015; </span> هنا سيتم طباعة النص في حد 240 حرف  <span> &#11015; </span> 
+</p>
+
+
+</div>
+
+                <!-- label for output -->
+            <div  class=""  style="text-align:center">
+                <textarea id="demo"   class="g-start-4 border border-dark"  > </textarea>
+            </div>
+        </div>
+    </div>
+
+
+<footer class="g-start text-bg-light p-3 card-text " >  Develope by <span> Faisal &nbsp; <br> <a href="https://twitter.com/FaisaliDev"> <i class='fa fa-twitter'></i> </a> &nbsp;  
+    <a href="https://github.com/FaisalDev1v1"> <i class='fa fa-github'></i> </a> &nbsp;
+    <a href="https://www.linkedin.com/in/faisal-alharthi-98138a1a9"> <i class='fa fa-linkedin'></i> </a>
+</span> </footer>
+ 
+<script>
+
+//  the correct Logic 
+let showtext 
+
+document.getElementById("mybtn").onclick = function(){
+
+    showtext = document.getElementById("area").value 
+    const result = showtext.substr(0 , 280);
+    console.log(result)
+    document.getElementById("demo").innerHTML = result ;
+   };
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,77 @@
+/* Start Global Rules */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+   /* Small  */
+  /*
+   @media (min-width: 768px) {
+    .container {
+      width: 750px;
+     }
+  }
+   Medium 
+   @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  Large 
+   @media (min-width: 1200px) {
+    .container {
+      width: 1170px; 
+    }
+  } 
+*/
+/* End Global Rules */
+
+
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: #eee;
+}
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+input#area {
+   margin-top: 10px;
+   margin-bottom: 20px;
+   width: 400px; 
+   height:300px;  
+   direction:rtl; 
+   text-align: justify;
+   border-color: 2px solid black;
+}
+
+textarea#demo  {
+   margin-top: 30px; 
+   width: 400px; 
+   height:300px 
+}
+
+footer {
+
+  text-align: center;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+
+}
